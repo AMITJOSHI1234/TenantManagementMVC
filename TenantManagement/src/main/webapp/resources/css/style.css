@@ -1,0 +1,156 @@
+body {
+            background-image: linear-gradient(to bottom, #f2f2f2, #fff);
+            background-size: 100% 300px;
+            background-position: 0% 100%;
+            animation: gradient 3s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 100%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 100%;
+            }
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .error {
+            color: red;
+        }
+
+        .login-form {
+            padding: 20px;
+            background-image: url('image/login.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            border-radius: 10px;
+            animation: flipInX 1s;
+        }
+
+        @keyframes flipInX {
+            from {
+                transform: rotateX(90deg);
+                opacity: 0;
+            }
+            to {
+                transform: rotateX(0deg);
+                opacity: 1;
+            }
+        }
+
+        .login-form h2 {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: #337ab7;
+            margin-bottom: 20px;
+            animation: bounceIn 1s;
+        }
+
+        @keyframes bounceIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .login-form label {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            animation: fadeInLeft 1s;
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .login-form input[type="email"], .login-form input[type="password"] {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: all 0.3s;
+            animation: fadeInRight 1s;
+        }
+
+        @keyframes fadeInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .login-form input[type="email"]:focus, .login-form input[type="password"]:focus {
+            border-color: #4CAF50;
+            box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            animation: flipInY 1s;
+        }
+
+        @keyframes flipInY {
+            from {
+                transform: rotateY(90deg);
+                opacity: 0;
+            }
+            to {
+                transform: rotateY(0deg);
+                opacity: 1;
+            }
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }

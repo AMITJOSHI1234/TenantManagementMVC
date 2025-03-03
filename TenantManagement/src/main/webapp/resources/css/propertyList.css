@@ -1,0 +1,35 @@
+.container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            
+            border-radius: 10px;
+
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .card-body {
+            padding: 20px;
+            background-color: wheat;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .card-text {
+            font-size: 16px;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
